@@ -1,6 +1,6 @@
 /* add custom styles */
-.gridListdemoBasicUsage md-grid-list {
-  margin: 8px; }
+/*.gridListdemoBasicUsage md-grid-list {
+  margin: 8px; }*/
 .gray {
   background: #f5f5f5; }
 .green {
@@ -13,8 +13,8 @@
   background: #b388ff; }
 .red {
   background: #ff8a80; }
-.gridListdemoBasicUsage md-grid-tile {
-  transition: all 400ms ease-out 50ms; }
+/*.gridListdemoBasicUsage md-grid-tile {
+  transition: all 400ms ease-out 50ms; }*/
 
 md-sidenav,
 .md-locked-open,
@@ -26,13 +26,51 @@ md-sidenav,
 
 body {
     font-family: 'Rubik', sans-serif;
+    color: black;
+}
+
+a {
+  text-decoration: none;
+  color : black;
+}
+
+a:hover {
+  color: white;
+}
+
+button {
+  color :black;
 }
 
 .md-button {
-  border-radius: 0px;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   text-transform: uppercase;
   border: none;
-  outline: white 1px solid;
+  color:black;
 }
+
+.study-up{
+  background-image: url('https://images.unsplash.com/3/doctype-hi-res.jpg?q=80&fm=jpg&s=88871674ce3ce449062b3a16c0be6c66');
+  background-size: cover;
+}
+
+.playlist{
+  background-image: url('../images/Project-playlist.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  padding: 10px;
+/*  border-top: black solid 1px;
+  border-right: black solid 1px;
+  border-bottom: black solid 1px;*/
+  text-align: center;
+}
+
+.gentleman {
+  background-image: url('../images/gentleman.png');
+  background-size: cover;
+}
+

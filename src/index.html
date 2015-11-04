@@ -23,44 +23,46 @@
     md-gutter="12px"
     md-gutter-gt-sm="0px" >
 
-      <md-grid-tile class="gray" md-rowspan="3" md-colspan="2" md-colspan-sm="1">
+      <md-grid-tile class="study-up" md-rowspan="3" md-colspan="2" md-colspan-sm="1">
         <md-grid-tile-footer>
-          <h3>#1: (3r x 2c)</h3>
+          <md-button><a href = "http://studyupcoding.herokuapp.com/" target = '_blank'>Study Up Coding</a></md-button>
         </md-grid-tile-footer>
       </md-grid-tile>
 
-      <md-grid-tile class="green">
-        <md-grid-tile-footer>
-          <h3>#2: (1r x 1c)</h3>
-        </md-grid-tile-footer>
+      <md-grid-tile class="green" md-rowspan = "2" >
+        <div class = "info">
+          <p>Study Up Coding is an application built to help users save tutorials they have found online and share them. Includes authentication using passport. Built with Angular, Node and Express. Also uses Skeleton as a front-end framework in place of Bootstrap. I made use of nested schemas in mongo to help develop a relational database. I used a lot of tests to make sure all my routes on the back end were working properly with my database before starting on the front end.</p>
+        </div>
+
       </md-grid-tile>
 
-      <md-grid-tile class="yellow">
+      <md-grid-tile class="blue">
          <div>
           <md-button ng-click="toggleRight()"
-          ng-hide="isOpenRight()"
-          class="md-primary">
-          Things
+          ng-hide="isOpenRight()">
+          Menu
           </md-button>
         </div>
       </md-grid-tile>
 
-      <md-grid-tile class="blue" md-rowspan="2">
+      <md-grid-tile class="playlist" md-rowspan="2" md-colspan = "2">
         <md-grid-tile-footer>
-          <h3>#4: (2r x 1c)</h3>
+          <md-button><a href = "http://bbouley.github.io/playlist-project-iteration3/" target = '_blank'>Play This</a></md-button>
         </md-grid-tile-footer>
       </md-grid-tile>
 
-      <md-grid-tile class="red" md-rowspan="2" md-colspan="2" md-colspan-sm="1">
-        <md-grid-tile-footer>
-          <h3>#5: (2r x 2c)</h3>
-        </md-grid-tile-footer>
+      <md-grid-tile class="purple gentleman">
+
       </md-grid-tile>
 
-      <md-grid-tile class="green" md-rowspan="2" >
-        <md-grid-tile-footer>
-          <h3>#6: (2r x 1c)</h3>
-        </md-grid-tile-footer>
+      <md-grid-tile class="red" md-rowspan="1" md-colspan="2" md-colspan-sm="1">
+          <h1>Projects</h1>
+      </md-grid-tile>
+
+      <md-grid-tile class="yellow" md-rowspan="1" md-colspan = "2" >
+          <div class= "info">
+            <p>My first project. Built using Jquery and vanilla Javascript. It is mainly a front-end project, however I used firebase to set up a database that I could write to. It uses jquery and DOM manipulation to dynamically add div sections to the page and update as the user inputs new songs into their playlist. </p>
+          </div>
       </md-grid-tile>
 
     </md-grid-list>
