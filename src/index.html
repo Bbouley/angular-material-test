@@ -3,18 +3,130 @@
   <head>
     <meta charset="utf-8">
     <title>Untitled</title>
-    
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
     <!-- sample angular code -->
-    <div class="container">
-      <div ng-controller="myController">
-        <p>{{ greeting }}</p>
+  <div ng-controller="AppCtrl as appCtrl" ng-cloak>
+
+    <!-- md-cols-sm="1"  -->
+
+    <md-grid-list
+
+    md-cols-md="2"
+    md-cols-gt-md="6"
+    md-row-height-gt-md="2:2"
+    md-row-height="1:1"
+    md-gutter="12px"
+    md-gutter-gt-sm="0px" >
+
+      <md-grid-tile class="gray" md-rowspan="3" md-colspan="2" md-colspan-sm="1">
+        <md-grid-tile-footer>
+          <h3>#1: (3r x 2c)</h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+
+      <md-grid-tile class="green">
+        <md-grid-tile-footer>
+          <h3>#2: (1r x 1c)</h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+
+      <md-grid-tile class="yellow">
+         <div>
+          <md-button ng-click="toggleRight()"
+          ng-hide="isOpenRight()"
+          class="md-primary">
+          Things
+          </md-button>
+        </div>
+      </md-grid-tile>
+
+      <md-grid-tile class="blue" md-rowspan="2">
+        <md-grid-tile-footer>
+          <h3>#4: (2r x 1c)</h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+
+      <md-grid-tile class="red" md-rowspan="2" md-colspan="2" md-colspan-sm="1">
+        <md-grid-tile-footer>
+          <h3>#5: (2r x 2c)</h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+
+      <md-grid-tile class="green" md-rowspan="2" >
+        <md-grid-tile-footer>
+          <h3>#6: (2r x 1c)</h3>
+        </md-grid-tile-footer>
+      </md-grid-tile>
+
+    </md-grid-list>
+
+  </div>
+
+  <!-- <div ng-controller="AppCtrl" layout="row" style="height:100vh;" ng-cloak> -->
+
+  <!-- <section layout="row" flex> -->
+
+<!--     <md-content flex layout-padding>
+
+      <div layout="row" layout-fill layout-align="top center">
+
+        <p>
+        The right sidenav will focus on a specific child element.
+        </p>
+
+        <div>
+          <md-button ng-click="toggleRight()"
+          ng-hide="isOpenRight()"
+          class="md-primary"
+          md-rowspan="4"
+          md-colspan="4">
+          Toggle right
+          </md-button>
+        </div>
+
       </div>
-    </div>
-    
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <div flex></div>
+
+    </md-content> -->
+
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+
+    <md-toolbar class="md-theme-light">
+      <h1 class="md-toolbar-tools">Sidenav Right</h1>
+    </md-toolbar>
+
+      <md-content ng-controller="RightCtrl" layout-padding>
+
+        <form>
+          <md-input-container>
+            <label for="testInput">Test input</label>
+            <input type="text" id="testInput"
+            ng-model="data" md-autofocus>
+          </md-input-container>
+        </form>
+
+        <md-button ng-click="close()" class="md-primary">
+        Back to the good stuff...
+        </md-button>
+      </md-content>
+
+    </md-sidenav>
+
+  <!-- </section> -->
+
+<!-- </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.js"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
