@@ -6,11 +6,12 @@
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
     <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
     <!-- sample angular code -->
-  <div ng-controller="AppCtrl as appCtrl" ng-cloak>
+  <div ng-controller="AppCtrl as appCtrl" ng-cloak class = 'container'>
 
     <!-- md-cols-sm="1"  -->
 
@@ -21,7 +22,7 @@
     md-row-height-gt-md="2:2"
     md-row-height="1:1"
     md-gutter="12px"
-    md-gutter-gt-sm="0px" >
+    md-gutter-gt-sm="12px" >
 
       <md-grid-tile class="study-up" md-rowspan="3" md-colspan="2" md-colspan-sm="1">
         <md-grid-tile-footer>
@@ -31,7 +32,7 @@
 
       <md-grid-tile class="green" md-rowspan = "2" >
         <div class = "info">
-          <p>Study Up Coding is an application built to help users save tutorials they have found online and share them. Includes authentication using passport. Built with Angular, Node and Express. Also uses Skeleton as a front-end framework in place of Bootstrap. I made use of nested schemas in mongo to help develop a relational database. I used a lot of tests to make sure all my routes on the back end were working properly with my database before starting on the front end.</p>
+          <p>Study Up Coding is an application built to help users save tutorials they have found online and share them. Includes authentication using passport. Built with Angular, Node and Express. Also uses Skeleton as a front-end framework in place of Bootstrap. I made use of nested schemas in mongo to help develop a relational database. I used Mocha/Chai tests to make ensure my routes were working properly with my database before starting on the front end.</p>
         </div>
 
       </md-grid-tile>
@@ -74,7 +75,16 @@
     <md-toolbar class="md-theme-light">
       <h1 class="md-toolbar-tools">Bradley James Bouley</h1>
     </md-toolbar>
-    <h4 class = "md-toolbar-tools">Person Of Interest</h4>
+    <h4 class = "md-toolbar-tools">Full Stack Web Developer</h4>
+    <div class = 'about-me'>
+      <p>I am a full stack web developer currently learning at Galvanize. I have recently moved over from London in order to learn more about web development and to start working in Denver.</p>
+    </div>
+
+      <div class = 'links'>
+      <a href = 'https://github.com/Bbouley/angular-project-studyTime' target = '_blank'>
+        <span class="fa fa-github-alt icon text-outline-title"></span>
+      </a>
+      </div>
 
       <md-content ng-controller="RightCtrl" layout-padding>
 

@@ -74,3 +74,23 @@ button {
   background-size: cover;
 }
 
+.container {
+  padding: 10px;
+}
+
+.about-me{
+  padding: 15px;
+}
+
+.links{
+  font-size: 30px;
+  text-align: center;
+}
+
+.links : hover {
+  color:blue;
+}
+
+.md-primary {
+  text-align: center;
+}
