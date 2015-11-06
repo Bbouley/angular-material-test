@@ -32,7 +32,7 @@
 
       <md-grid-tile class="green" md-rowspan = "2" >
         <div class = "info">
-          <p>Study Up Coding is an application built to help users save tutorials they have found online and share them. Includes authentication using passport. Built with Angular, Node and Express. Also uses Skeleton as a front-end framework in place of Bootstrap. I made use of nested schemas in mongo to help develop a relational database. I used Mocha/Chai tests to make ensure my routes were working properly with my database before starting on the front end.</p>
+          <p>Study Up Coding is an application built to help users save tutorials they have found online. Includes authentication using passport. Built with Angular, Node and Express. Also uses Skeleton as a front-end framework in place of Bootstrap. I made use of nested schemas in mongo to help develop a relational database. I used Mocha/Chai tests to make ensure my routes were working properly with my database before starting on the front end.</p>
         </div>
 
       </md-grid-tile>
@@ -41,7 +41,7 @@
          <div>
           <md-button ng-click="toggleRight()"
           ng-hide="isOpenRight()">
-          Menu
+          More About Me
           </md-button>
         </div>
       </md-grid-tile>
@@ -52,7 +52,7 @@
         </md-grid-tile-footer>
       </md-grid-tile>
 
-      <md-grid-tile class="purple gentleman">
+      <md-grid-tile class="gentleman">
 
       </md-grid-tile>
 
@@ -66,11 +66,14 @@
           </div>
       </md-grid-tile>
 
+      <md-grid-tile class = "blue" md-colspan = "3" md-rowspan = "2">
+      </md-grid-tile>
+
     </md-grid-list>
 
   </div>
 
-    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" layout="column" layout-align="start center">
 
     <md-toolbar class="md-theme-light">
       <h1 class="md-toolbar-tools">Bradley James Bouley</h1>
@@ -78,16 +81,22 @@
     <h4 class = "md-toolbar-tools">Full Stack Web Developer</h4>
     <div class = 'about-me'>
       <p>I am a full stack web developer currently learning at Galvanize. I have recently moved over from London in order to learn more about web development and to start working in Denver.</p>
+      <p>I have experience with Javascript and several frameworks and libraries around that including Jquery, Angular, Node.js, Express, and others. I am also well versed in using Bootstrap as well as other CSS libraries such as Skeleton.</p>
     </div>
 
-      <div class = 'links'>
-      <a href = 'https://github.com/Bbouley/angular-project-studyTime' target = '_blank'>
+      <div class = "links">
+      <a href = "https://github.com/Bbouley/angular-project-studyTime" target = "_blank">
         <span class="fa fa-github-alt icon text-outline-title"></span>
       </a>
+       <a href = 'https://www.linkedin.com/pub/bradley-bouley/b7/788/221' target = '_blank'>
+             <span class="fa fa-linkedin-square icon-header text-outline-title"></span>
+       </a>
+        <a href = 'https://twitter.com/bradleythefirst' target = '_blank'>
+         <span class="fa fa-twitter icon-header text-outline-title"></span>
+       </a>
       </div>
 
-      <md-content ng-controller="RightCtrl" layout-padding>
-
+      <md-content ng-controller="RightCtrl" layout-padding layout="column" layout-align="center center">
         <md-button ng-click="close()" class="md-primary">
         Back to the good stuff...
         </md-button>
