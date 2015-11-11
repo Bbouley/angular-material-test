@@ -17,6 +17,16 @@ angular
         }
       };
 
+      $scope.showInfoPlayThis = false;
+
+      $scope.showInfoPlayThisFunc = function(){
+        if($scope.showInfoPlayThis === false) {
+          $scope.showInfoPlayThis = true;
+        } else {
+          $scope.showInfoPlayThis = false;
+        }
+      };
+
     $scope.toggleLeft = buildDelayedToggler('left');
     $scope.toggleRight = buildToggler('right');
     $scope.isOpenRight = function(){
