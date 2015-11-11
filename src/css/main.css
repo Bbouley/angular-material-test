@@ -122,3 +122,20 @@ button {
 .fa:hover {
   color : black;
 }
+
+.pad {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 7vw;
+}
+
+.main-title {
+  font-size: 7vw;
+}
+
+.button-title {
+  font-size: 1.5vw;
+  overflow: scroll;
+}
+
+

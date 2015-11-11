@@ -41,7 +41,9 @@
          <div>
           <md-button ng-click="toggleRight()"
           ng-hide="isOpenRight()">
-          More About Me
+          <div class = "button-title">
+            <h1>More<br>About<br>Me</h1>
+          </div>
           </md-button>
         </div>
       </md-grid-tile>
@@ -66,17 +68,36 @@
       </md-grid-tile>
 
       <md-grid-tile class="red" md-rowspan="1" md-colspan="2" md-colspan-sm="1">
-          <h1>Projects</h1>
+          <h1 class = "main-title">Projects</h1>
       </md-grid-tile>
 
       <md-grid-tile class = "blue">
+      </md-grid-tile>
+
+       <md-grid-tile class="purple" md-rowspan="1" md-colspan="2" md-colspan-sm="1">
+
+          <div layout="row" layout-align="space-around center">
+
+            <div>
+              <a href = "https://twitter.com/bradleythefirst" target = '_blank'><i class="fa fa-twitter-square pad"></i></a>
+            </div>
+
+            <div>
+              <a href = "https://github.com/Bbouley" target = '_blank'><i class="fa fa-github-alt pad"></i></a>
+            </div>
+
+            <div>
+              <a href = "https://www.linkedin.com/in/bbouley" target = '_blank'><i class="fa fa-linkedin-square pad"></i></a>
+            </div>
+
+          </div>
       </md-grid-tile>
 
     </md-grid-list>
 
   </div>
 
-    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" layout="column" layout-align="start center">
+    <md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right">
 
     <md-toolbar class="md-theme-light">
       <h1 class="md-toolbar-tools">Bradley James Bouley</h1>
@@ -88,6 +109,7 @@
     </div>
 
       <div class = "links">
+
       <a href = "https://github.com/Bbouley/angular-project-studyTime" target = "_blank">
         <span class="fa fa-github-alt icon text-outline-title"></span>
       </a>
@@ -99,7 +121,7 @@
        </a>
       </div>
 
-      <md-content ng-controller="RightCtrl" layout-padding layout="column" layout-align="center center">
+      <md-content ng-controller="RightCtrl">
         <md-button ng-click="close()" class="md-primary">
         Back to the good stuff...
         </md-button>
