@@ -6,6 +6,17 @@
 angular
   .module('myApp', ['ngMaterial'])
   .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log) {
+
+     $scope.showInfoStudyUp = false;
+
+      $scope.showInfoStudyUpFunc = function(){
+        if($scope.showInfoStudyUp === false) {
+          $scope.showInfoStudyUp = true;
+        } else {
+          $scope.showInfoStudyUp = false;
+        }
+      };
+
     $scope.toggleLeft = buildDelayedToggler('left');
     $scope.toggleRight = buildToggler('right');
     $scope.isOpenRight = function(){
@@ -43,6 +54,7 @@ angular
           .toggle();
       };
     }
+
   })
   .controller('RightCtrl', function ($scope, $timeout, $mdSidenav, $log) {
     $scope.close = function () {

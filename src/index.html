@@ -10,10 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <!-- sample angular code -->
-  <div ng-controller="AppCtrl as appCtrl" ng-cloak class = 'container'>
 
-    <!-- md-cols-sm="1"  -->
+  <div ng-controller="AppCtrl" ng-cloak class = 'container'>
 
     <md-grid-list
 
@@ -25,10 +23,21 @@
     md-gutter-gt-sm="12px" >
 
       <md-grid-tile class="study-up" md-rowspan="3" md-colspan="2" md-colspan-sm="1">
+
+        <div class = "study-up-info" ng-show="showInfoStudyUp">
+          <h3>Study Up Coding is an application built to help users save tutorials they have found online. Includes authentication using passport. Built with Angular, Node and Express. Also uses Skeleton as a front-end framework in place of Bootstrap. I made use of nested schemas in mongo to help develop a relational database. I used Mocha/Chai tests to make ensure my routes were working properly with my database before starting on the front end.</h3>
+        </div>
+
         <md-grid-tile-footer>
+         <button ng-click = "showInfoStudyUpFunc()">
+          <i class="fa fa-info-circle"></i>
+          </button>
           <md-button><a href = "http://studyupcoding.herokuapp.com/" target = '_blank'>Study Up Coding</a></md-button>
         </md-grid-tile-footer>
+
       </md-grid-tile>
+
+
 
       <md-grid-tile class="green" md-rowspan = "2" >
         <div class = "info">

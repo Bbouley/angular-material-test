@@ -90,3 +90,13 @@ button {
 .md-primary {
   text-align: center;
 }
+
+.study-up-info {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
