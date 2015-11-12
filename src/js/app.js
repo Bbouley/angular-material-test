@@ -1,8 +1,3 @@
-// sample angular code
-
-// angular.module('myApp', ['ngMaterial'])
-// .controller('AppCtrl', function($scope) {});
-
 angular
   .module('myApp', ['ngMaterial'])
   .controller('AppCtrl', function ($scope, $timeout, $mdSidenav, $log) {
@@ -70,4 +65,4 @@ angular
     $scope.close = function () {
       $mdSidenav('right').close();
     };
-  });
+  })
