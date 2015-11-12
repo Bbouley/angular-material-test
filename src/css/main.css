@@ -122,3 +122,17 @@ button {
 .fa:hover {
   color : black;
 }
+
+.about-me-button {
+  font-size: 1.5vw;
+}
+
+.main-title {
+  font-size: 6vw;
+}
+
+.pad {
+  padding-right: 2vw;
+  padding-left: 2vw;
+  font-size: 10vw;
+}

@@ -41,7 +41,9 @@
          <div>
           <md-button ng-click="toggleRight()"
           ng-hide="isOpenRight()">
+          <div class = "about-me-button">
           More About Me
+          </div>
           </md-button>
         </div>
       </md-grid-tile>
@@ -66,10 +68,30 @@
       </md-grid-tile>
 
       <md-grid-tile class="red" md-rowspan="1" md-colspan="2" md-colspan-sm="1">
-          <h1>Projects</h1>
+          <h1 class = "main-title">Projects</h1>
       </md-grid-tile>
 
       <md-grid-tile class = "blue">
+      </md-grid-tile>
+
+      <md-grid-tile class="purple" md-rowspan="1" md-colspan="3" md-colspan-sm="1">
+      <div class = "site-icons" layout = "row">
+        <div>
+          <a href = "https://twitter.com/bradleythefirst" target = "_blank">
+            <i class="fa fa-twitter-square pad"></i>
+          </a>
+        </div>
+        <div>
+          <a href = "https://github.com/Bbouley" target = "_blank">
+            <i class="fa fa-github-square pad"></i>
+          </a>
+        </div>
+        <div>
+          <a href = "https://www.linkedin.com/in/bbouley" target = "_blank">
+            <i class="fa fa-linkedin-square pad"></i>
+          </a>
+        </div>
+      </div>
       </md-grid-tile>
 
     </md-grid-list>
