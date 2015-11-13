@@ -93,9 +93,7 @@ button {
 }
 
 .study-up-info {
-  background-color: rgba(255,255,255, 0.9);
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: rgba(255,255,255, 1);
   width: 100%;
   height: auto;
   position: absolute;
@@ -104,7 +102,7 @@ button {
 }
 
 .play-this-info {
-  background-color: rgba(255,255,255, 0.9);
+  background-color: rgba(255,255,255, 1);
   padding-left: 10px;
   padding-right: 10px;
   width: 100%;
@@ -130,10 +128,25 @@ button {
 
 .main-title {
   font-size: 6vw;
+  text-decoration: underline;
 }
 
 .pad {
   padding-right: 2vw;
   padding-left: 2vw;
   font-size: 10vw;
+}
+
+.show-hide {
+  -webkit-transition:all linear 0.3s;
+  transition:all linear 0.3s;
+}
+
+.show-hide.ng-hide {
+  opacity:0;
+}
+
+.inner-text{
+  padding-left: 10px;
+  padding-right: 10px;
 }
